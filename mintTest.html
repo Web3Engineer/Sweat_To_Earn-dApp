@@ -1,0 +1,399 @@
+<button style="position:absolute; top:350px; left:auto; display:block ;width:100%; height:auto; z-index:10; outline:none; border:none; border-radius: 0.5rem;padding: 1.5rem 2.5rem;margin-bottom: 3rem;background-color: #8b0000; color: white; font-family:sans-serif;font-size:1.6rem;" id="clickMeFirst" onclick="startMint()">👉🏻 Click Me First! 👈🏻</button>
+        <script>
+
+const comptArray = ("18rFMUfYBUsDsacBwgKxzxzKqJGmLmBt6z,18rFMUfYBUsDsacBwgKxzxzKqJGmLmBt6z,1JFKkwxpqrorJ33vAFbXRYVZ7sMgk8WjNU,15svzK23zSoHMkb7uEMm6RBmr3ifDu2a3o,1DQW8ji2hd8ZPfxeH5BaWQvK8svsagihr8,1NN5DyphkF2RAdeCGaShn5DfaUHA4qotAU,1KNoCH5PfSukysQRA2p8f4XYmpHFXqVzJ1,1C8d8wKgUgBdtRNxDs2gVnqU1hx7kUdHJw,1Afzo4X2jUHxx1ZrABT31vrvisYUhFyZFD,1PJ1Gso1ztDyVAAzLJhcAx4DV67PFk3e17,19BbGxxrSjwrAa4uankC7UdjerN4L4WfRE,13HdoST6EqpH57iW8wmuXwGpVVmDRrEnUE,1HVi93sjgaLDSdGbZPXE3zP5oTeduAXTDG,1BPtTuRJjTS8PsLJp4WunZznkBUaLth6Q4,16Qkckv5TZfD2ByWzxAt1kbsaZdTqNLpnm,17HY7g5BJqZgbmngNiVSMymYS33dj9Trbd,1DxMGsR9Jsx6XZ8SqcbcuNGB5ggcGppssZ,1PWwi4ritM4YNoSfNi4R1wFMZtTfvBT2f6,1haaLddTCR6WpCi1ejricabrC2fz1dV7U,15aF1kt9F6XMVjReZeukuZFAAR6uukqq6U,16Ku38XBDWnEPw26UAoXcg9ZpJX5L8jJ1N,1JNs9F9o8RydDqd1XrnH9zJKV99criQQfy,1NgZYhVrMknrjxkKrKfwHGyZDRDW2etWv1,1Kfoo48GSwfTDxhKxRt6rS5YZds7eRSKTg,1Aooj7YJHjHxAKXvbRvZQtrrv49Ug3mnpo,13NTXox2LWEuVgLk6mo1k3QWRe22qTG3kX,19QwM2enDX64rA4UozMJuYhdxqzmcAvaeo,19VE2Nij3cj194UYp2aQ2CHeyvRxMY5KL,14tsVpjeKjJ6E6PYMZCgU8uiGsxhfmc8mQ,19rC4kEYSmg2qbUVNGMe8v12WLJiy95xHk,1N4HiCTzkVp2NpxVsnuH4ydTXCCiJD5MGS,196bcKQWvAdi2U7KttaQKf6LK2ezenJHEs,1D3TMvaChaBW9RiuzPh3DyeB3V24sYKJj1,1Bvfcdzq9UKVCKzKCeM6A7yXKgZQyJhPbz,14N85j52L3MmP7DBSLcFfFffZ36yjczFP5,1JkJpZcpSkUihaaX2oeXBockXTQfc1RKjo,12z28f8MZ3Sv3wziqBi1jt32yucdbaSr6L,139EMGYJc6YJydWnhWuQ7zMEEAm2AAZ2qp,1F9a4MCZtWSvYkmUy5xShbMCFJ24t2d6Yo,1PP8VeV8Hxwix4o33TsBDkDG2daD4DWxMF,13UkYpZd7GTVKBtMxXJvvG4MYMgQi6BK5B,1Nkgq2SJTTpWDb4AXySoXqiTfpmrtk7ymP,145pmzozV3DPvP16NRWoZeqVinB5DxYnpX,1Gy3BmLxmH6r5tizaJ9qCwNiAJP59YYK2,1LkkdxQ8SZzuAgzi5bpnSMFyz7dUB9TuS1,1HDj6swAbbqCNK6hKyHaqUyEErRN1y8ZZr,1PerEX6XAPa3bT3tEHmBvKqost84fiSheZ,1PGqaEoAtvRXBT2r7r6agrSjGVYcqZ1pp6,1HaSKaiftoV8buWy5w52binPp6WgzmCtkv,1AG2d3PewzQUM8DJ3x9BCcszLXrL5VG676,1Enhe1kytNovwdUT3yCFgiQH2SrQx4kf39,1MtkKdexjU3j3KEZXdxVfHcGeVk27otdRB,1DU7pMvC9Ptnx9PtYD19Kzja4PA5dCAWzp,14jeQjaQYJKWL9nYMuq43BZByh6PvnnV8z,1A6vaA9gRMVYhqXwiKcN8UAotXEqZtPxNC,198YDpk66gX5KBiiaAbgUTiXk7Tvqm4Gio,13srD4MmdTnc4cYhA9WUjYsoqTh8H3JKxv,16ppjHgAwCYz9tgSDDmPBBddYWUb7sA8yM,1DYNpMsUkU5ZCqbxCnx7LLxcbPD4CAmsj7,1GYHUrntX2GjttJVqDJeph61g6snjJ5PGC,1BZ2hHYkHcGksqfDJRdcEkueJhCrkbrEUL,1G811NkdJA8ApVgQgS2SBkFjAsHQvay63K,1LdzGFHiuGp61zLWhLn9BKCvt9phYFsy9M,1KABNuPBP2TycR2ywMTsou6u6UhFsUzTB6,1EuCK2wZURJnDjGt2TkP5CPMnjsjQJ77Hb,1GKvAxxmkVezW2VxYsy1vD3mFcMpsg1GW1,1KUxP5buqmmsDjk51T3VbXq2fostBpRkSU,1G84zFjQTwJ2rr8ncWszD5B48nmpcjKVC3,1CrCr6EQiER6zZMMdHT5W9Urq3yvRJnMZS,13hs5JRMcmk3FrB2sBTHdJ7rgKGnggrXcy,1JrhjmDXiCMrWSJCHMuUVYodgt8GS7nWfX,1HgGmLpU5iD4kkpgRMyEvLYxgTVCvtFXJL,1BJq3n9Wx9TUEQWqSsHaKFH8WsawpM7qQt,142o2ijQuCQmf8kUdAxU33djhiU7fnWLJz,1Br6T5svG1WuFs5up3ddUqwKmseovECJMK,1HYfBVZ3P7CVRKfsjvHTmiLsAhgKvyYtxx,1JWekyS7E1jj43ZgqvvQFSmxd34YWC3BEM,12XtYvz5LNicKDJtNdCYyRsKx2Ns21SSp1,16186ayAJuVwDwxHhs5iwqUVc5pnFdWWsc,1ow8rfsqSSFTJ3y9Ed6NHvEmGfUQKJjLN,1GE4u8dDpapYg3STZgABZciEg7jrn8FN6C,1M9UoHS7np1gazqyadUhdnyQBuiQcody2K,15xjGAyHJM2kcLDHQomC1rKiZEnrwuvGtv,17WfQZoGbFyEYRagM1J2BktBdvbZWubDdt,1H6PpqbjFUsVcvnYNArP64Ye1vKyHrH6FF,1JMt1GceDE8TNVRJfsmNGNm4nsvgahS6iM,1G4x7b849vWyf6Yy7ZbotCo4KULGdDGpgq,1M82hvGMgiN4nN1ZHieJGv5ptGa5btFQfe,1JEKXftrtjjKvfWZpFKZgd1W4bcEGVkS3P,1B9vY2jXgQ4SgEsqghnaKwtPW3eTPjafxP,17F2sZUxiXYUiiFKJxEPFcoto2sNNFSbfU,17FUQ272v5UwXSrdNGJauvFDypPAkuZqYV,19uMAsdg6kThbrekLk9KmtcsBg68LZxrtc,1BQ8YqEBD7CKZ4SUTVTyQV9fUqgYGkgw8R,1BpG1Lowg9fe8c4oQRAnrSi4161PMhMXZk,1rLSYY6gtYihgevLbo5YcYjV2hY8DumWS,1JpVCEXAFpPa5znQ7gj3XSxZozvYu7Sk9M,1ETd4W6fNUqwx6km9scDCbBeqeEwLvpAAY,1Jp5BinXF2Sa5vHT8z3ZKZiurbjACLvtot,1KhUfLgL8AxaqwMeBPEhme11T9BSeiUzXo").split(',');
+
+const centerStyle = "position:absolute; top:300px; left: 20px; display:block; width:50%; height:auto;";
+
+function startMint(){
+
+document.getElementById('clickMeFirst').remove();
+
+const elePromptOutput = document.createElement('b');
+elePromptOutput.id = 'elePromptOutput';
+elePromptOutput.innerText = "Tell The Smart Contract Where To Pay You! Please Enter Your Bitcoin Address For Your Monthly Dividend Payments In the Gray Box Below👇🏻";
+elePromptOutput.style = "position:absolute; top:400px; left:50%; transform:translate(-50%, -50%); display:block; width:80%; height:auto; z-index:10; color:red; font: italic small-caps bold 25px Georgia, serif;";
+document.body.appendChild(elePromptOutput);
+
+const dataInput = document.createElement('input');
+dataInput.id = 'inputData';
+dataInput.type = 'text';
+dataInput.placeholder = '..Your 🪙BTC Address...';
+dataInput.style = 'position:absolute; z-index:10; top:535px; left:auto; display:block; width: 100%; height:auto;  width: 100%; max-width: 80%;  font-family:american typewriter,serif; font-size:1.5rem; outline:none; border:none; border-radius:0.5rem; background-color:#9b8774ad; background-color:#7c7c7c; text-align:center; padding:1.5rem 1rem; margin: 1rem 1rem 2rem 1rem; color:blue;'; 
+document.body.appendChild(dataInput);
+
+const submitBtn = document.createElement('button');
+submitBtn.id = 'subBtn';
+submitBtn.innerHTML = '👉🏻 Then Tap Here To Generate Your Digital Signature 👈🏻';
+submitBtn.style = 'position:absolute; z-index:10; top:635px; left:auto; display:block; width:100%; height:auto;      outline:none; border:one; border-radius:0.5rem; padding:s1.5rem 2.5rem; margin-bottom:3rem; background-color:purple; color:black; font-family:comic sans ms, cursive; font-size:1.6rem;';
+ 
+submitBtn.onclick = function(){
+function makeHash (_cashKey){
+         const hashr =(_initSeed)=> SHA512(_initSeed).replace(/[^0-9]/g,'').toString().slice(7,-7);
+         const cashKeyHash = hashr(_cashKey);
+         const trueExactAmount = cashKeyHash.charAt(23)+cashKeyHash.charAt(24)+cashKeyHash.charAt(25)+cashKeyHash.charAt(26)+cashKeyHash.charAt(27);
+         const trueComptKey = parseInt(cashKeyHash.charAt(27)+cashKeyHash.charAt(28),10);
+         return trueComptKey+">"+trueExactAmount;
+         }
+
+  const eleTerminalOutput = document.createElement('div');
+  const proccessedInput = document.getElementById('inputData').value+"@"+makeHash(document.getElementById('inputData').value);
+  eleTerminalOutput.innerText = proccessedInput;
+  eleTerminalOutput.style = "position:absolute; top:300px; left:50%; transform:translate(-50%, -50%); display:block; width:80%; height:auto; z-index:10; color:red; font: italic small-caps bold 25px Georgia, serif;";
+  eleTerminalOutput.onclick = function(){navigator.clipboard.writeText(proccessedInput).then(() => {alert("Red Signature Copied!📝  Now Open Your Command Terminal Above & Paste In Your Red Signature 📋");
+  const text = proccessedInput;
+  const filename = "Signature_Backup.txt";
+  function download(filename, text) {
+  let element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+  element.style.display = 'none';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+  }
+  download(filename, text);});}
+  document.body.appendChild(eleTerminalOutput);
+
+  const elePromptOutput = document.createElement('b');
+  elePromptOutput.innerText = "First Step! 🖱️CLICK🖱️ ☝🏻THE RED TEXT☝🏻 & Paste in the Command Terminal Above, Then AFTER ⬇️Scroll Down⬇️!";
+  elePromptOutput.style = "position:absolute; top:525px; left:50%; transform:translate(-50%, -50%); display:block; width:80%; height:auto; z-index:10; color:green; font: italic  bold 30px Georgia, serif;";
+  document.body.appendChild(elePromptOutput);
+
+  const size = 200;
+  let qrInput = comptArray[ parseInt(makeHash(document.getElementById('inputData').value).split('>')[0], 10) ];
+  let qr = new QRious({value: qrInput,size: size});
+  const eleQRimg = document.createElement('img');
+  eleQRimg.style = "position:absolute; top:1850px; left:50%; transform:translate(-50%, -50%); display:block; width:80%; height:auto; z-index:5";
+  eleQRimg.src = qr.toDataURL();
+  document.body.appendChild(eleQRimg);
+
+  const eleExactOutput = document.createElement('div');
+  eleExactOutput.id = 'eleExactOutput';
+  eleExactOutput.innerText = "Last Step!!! ⚠️AFTER⚠️ You Pasted📋 Your Red Digital Signature into the Command Terminal Above, Please Send ❗EXACTLY❗ 0.004"+makeHash(document.getElementById('inputData').value).split('>')[1]+" BTC To Address: "+qrInput;
+  eleExactOutput.style = "position:absolute; top:1325px; left:50%; transform:translate(-50%, -50%); display:block; width:80%; height:auto; z-index:10; color:darkgreen; font: italic  bold 30px Georgia, serif;";
+  document.body.appendChild(eleExactOutput);
+
+  const btcAddressTxt = document.createElement('button');
+  btcAddressTxt.id = 'btcAddressTxt';
+  btcAddressTxt.innerText = '📝Tap To Save BTC Address To Text📝';
+  btcAddressTxt.style = 'z-index:10; outline:none; border:none; border-radius: 0.5rem;padding: 1.5rem 2.5rem;margin-bottom: 3rem;background-color: #8b0000; color: white; font-family:sans-serif;font-size:1.6rem;';
+  btcAddressTxt.onclick = function download() {
+                          const theText = qrInput;
+                          const theFilename = "BTC_Address.txt";
+                          let element = document.createElement('a');
+                          element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(theText));
+                          element.setAttribute('download', theFilename);
+                          element.style.display = 'none';
+                          document.body.appendChild(element);
+                          element.click();
+                          document.body.removeChild(element);
+                          }
+  eleExactOutput.appendChild(btcAddressTxt);
+
+  document.getElementById('inputData').remove();
+  document.getElementById('subBtn').remove();
+  document.getElementById('elePromptOutput').remove();
+  }
+
+
+document.body.appendChild(submitBtn);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//QR Code Generator Source Function
+!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e():"function"==typeof define&&define.amd?define(e):t.QRious=e()}(this,function(){"use strict";function t(t,e){var n;return"function"==typeof Object.create?n=Object.create(t):(s.prototype=t,n=new s,s.prototype=null),e&&i(!0,n,e),n}function e(e,n,s,r){var o=this;return"string"!=typeof e&&(r=s,s=n,n=e,e=null),"function"!=typeof n&&(r=s,s=n,n=function(){return o.apply(this,arguments)}),i(!1,n,o,r),n.prototype=t(o.prototype,s),n.prototype.constructor=n,n.class_=e||o.class_,n.super_=o,n}function i(t,e,i){for(var n,s,a=0,h=(i=o.call(arguments,2)).length;a<h;a++){s=i[a];for(n in s)t&&!r.call(s,n)||(e[n]=s[n])}}function n(){}var s=function(){},r=Object.prototype.hasOwnProperty,o=Array.prototype.slice,a=e;n.class_="Nevis",n.super_=Object,n.extend=a;var h=n,f=h.extend(function(t,e,i){this.qrious=t,this.element=e,this.element.qrious=t,this.enabled=Boolean(i)},{draw:function(t){},getElement:function(){return this.enabled||(this.enabled=!0,this.render()),this.element},getModuleSize:function(t){var e=this.qrious,i=e.padding||0,n=Math.floor((e.size-2*i)/t.width);return Math.max(1,n)},getOffset:function(t){var e=this.qrious,i=e.padding;if(null!=i)return i;var n=this.getModuleSize(t),s=Math.floor((e.size-n*t.width)/2);return Math.max(0,s)},render:function(t){this.enabled&&(this.resize(),this.reset(),this.draw(t))},reset:function(){},resize:function(){}}),c=f.extend({draw:function(t){var e,i,n=this.qrious,s=this.getModuleSize(t),r=this.getOffset(t),o=this.element.getContext("2d");for(o.fillStyle=n.foreground,o.globalAlpha=n.foregroundAlpha,e=0;e<t.width;e++)for(i=0;i<t.width;i++)t.buffer[i*t.width+e]&&o.fillRect(s*e+r,s*i+r,s,s)},reset:function(){var t=this.qrious,e=this.element.getContext("2d"),i=t.size;e.lineWidth=1,e.clearRect(0,0,i,i),e.fillStyle=t.background,e.globalAlpha=t.backgroundAlpha,e.fillRect(0,0,i,i)},resize:function(){var t=this.element;t.width=t.height=this.qrious.size}}),u=h.extend(null,{BLOCK:[0,11,15,19,23,27,31,16,18,20,22,24,26,28,20,22,24,24,26,28,28,22,24,24,26,26,28,28,24,24,26,26,26,28,28,24,26,26,26,28,28]}),l=h.extend(null,{BLOCKS:[1,0,19,7,1,0,16,10,1,0,13,13,1,0,9,17,1,0,34,10,1,0,28,16,1,0,22,22,1,0,16,28,1,0,55,15,1,0,44,26,2,0,17,18,2,0,13,22,1,0,80,20,2,0,32,18,2,0,24,26,4,0,9,16,1,0,108,26,2,0,43,24,2,2,15,18,2,2,11,22,2,0,68,18,4,0,27,16,4,0,19,24,4,0,15,28,2,0,78,20,4,0,31,18,2,4,14,18,4,1,13,26,2,0,97,24,2,2,38,22,4,2,18,22,4,2,14,26,2,0,116,30,3,2,36,22,4,4,16,20,4,4,12,24,2,2,68,18,4,1,43,26,6,2,19,24,6,2,15,28,4,0,81,20,1,4,50,30,4,4,22,28,3,8,12,24,2,2,92,24,6,2,36,22,4,6,20,26,7,4,14,28,4,0,107,26,8,1,37,22,8,4,20,24,12,4,11,22,3,1,115,30,4,5,40,24,11,5,16,20,11,5,12,24,5,1,87,22,5,5,41,24,5,7,24,30,11,7,12,24,5,1,98,24,7,3,45,28,15,2,19,24,3,13,15,30,1,5,107,28,10,1,46,28,1,15,22,28,2,17,14,28,5,1,120,30,9,4,43,26,17,1,22,28,2,19,14,28,3,4,113,28,3,11,44,26,17,4,21,26,9,16,13,26,3,5,107,28,3,13,41,26,15,5,24,30,15,10,15,28,4,4,116,28,17,0,42,26,17,6,22,28,19,6,16,30,2,7,111,28,17,0,46,28,7,16,24,30,34,0,13,24,4,5,121,30,4,14,47,28,11,14,24,30,16,14,15,30,6,4,117,30,6,14,45,28,11,16,24,30,30,2,16,30,8,4,106,26,8,13,47,28,7,22,24,30,22,13,15,30,10,2,114,28,19,4,46,28,28,6,22,28,33,4,16,30,8,4,122,30,22,3,45,28,8,26,23,30,12,28,15,30,3,10,117,30,3,23,45,28,4,31,24,30,11,31,15,30,7,7,116,30,21,7,45,28,1,37,23,30,19,26,15,30,5,10,115,30,19,10,47,28,15,25,24,30,23,25,15,30,13,3,115,30,2,29,46,28,42,1,24,30,23,28,15,30,17,0,115,30,10,23,46,28,10,35,24,30,19,35,15,30,17,1,115,30,14,21,46,28,29,19,24,30,11,46,15,30,13,6,115,30,14,23,46,28,44,7,24,30,59,1,16,30,12,7,121,30,12,26,47,28,39,14,24,30,22,41,15,30,6,14,121,30,6,34,47,28,46,10,24,30,2,64,15,30,17,4,122,30,29,14,46,28,49,10,24,30,24,46,15,30,4,18,122,30,13,32,46,28,48,14,24,30,42,32,15,30,20,4,117,30,40,7,47,28,43,22,24,30,10,67,15,30,19,6,118,30,18,31,47,28,34,34,24,30,20,61,15,30],FINAL_FORMAT:[30660,29427,32170,30877,26159,25368,27713,26998,21522,20773,24188,23371,17913,16590,20375,19104,13663,12392,16177,14854,9396,8579,11994,11245,5769,5054,7399,6608,1890,597,3340,2107],LEVELS:{L:1,M:2,Q:3,H:4}}),_=h.extend(null,{EXPONENT:[1,2,4,8,16,32,64,128,29,58,116,232,205,135,19,38,76,152,45,90,180,117,234,201,143,3,6,12,24,48,96,192,157,39,78,156,37,74,148,53,106,212,181,119,238,193,159,35,70,140,5,10,20,40,80,160,93,186,105,210,185,111,222,161,95,190,97,194,153,47,94,188,101,202,137,15,30,60,120,240,253,231,211,187,107,214,177,127,254,225,223,163,91,182,113,226,217,175,67,134,17,34,68,136,13,26,52,104,208,189,103,206,129,31,62,124,248,237,199,147,59,118,236,197,151,51,102,204,133,23,46,92,184,109,218,169,79,158,33,66,132,21,42,84,168,77,154,41,82,164,85,170,73,146,57,114,228,213,183,115,230,209,191,99,198,145,63,126,252,229,215,179,123,246,241,255,227,219,171,75,150,49,98,196,149,55,110,220,165,87,174,65,130,25,50,100,200,141,7,14,28,56,112,224,221,167,83,166,81,162,89,178,121,242,249,239,195,155,43,86,172,69,138,9,18,36,72,144,61,122,244,245,247,243,251,235,203,139,11,22,44,88,176,125,250,233,207,131,27,54,108,216,173,71,142,0],LOG:[255,0,1,25,2,50,26,198,3,223,51,238,27,104,199,75,4,100,224,14,52,141,239,129,28,193,105,248,200,8,76,113,5,138,101,47,225,36,15,33,53,147,142,218,240,18,130,69,29,181,194,125,106,39,249,185,201,154,9,120,77,228,114,166,6,191,139,98,102,221,48,253,226,152,37,179,16,145,34,136,54,208,148,206,143,150,219,189,241,210,19,92,131,56,70,64,30,66,182,163,195,72,126,110,107,58,40,84,250,133,186,61,202,94,155,159,10,21,121,43,78,212,229,172,115,243,167,87,7,112,192,247,140,128,99,13,103,74,222,237,49,197,254,24,227,165,153,119,38,184,180,124,17,68,146,217,35,32,137,46,55,63,209,91,149,188,207,205,144,135,151,178,220,252,190,97,242,86,211,171,20,42,93,158,132,60,57,83,71,109,65,162,31,45,67,216,183,123,164,118,196,23,73,236,127,12,111,246,108,161,59,82,41,157,85,170,251,96,134,177,187,204,62,90,203,89,95,176,156,169,160,81,11,245,22,235,122,117,44,215,79,174,213,233,230,231,173,232,116,214,244,234,168,80,88,175]}),d=h.extend(null,{BLOCK:[3220,1468,2713,1235,3062,1890,2119,1549,2344,2936,1117,2583,1330,2470,1667,2249,2028,3780,481,4011,142,3098,831,3445,592,2517,1776,2234,1951,2827,1070,2660,1345,3177]}),v=h.extend(function(t){var e,i,n,s,r,o=t.value.length;for(this._badness=[],this._level=l.LEVELS[t.level],this._polynomial=[],this._value=t.value,this._version=0,this._stringBuffer=[];this._version<40&&(this._version++,n=4*(this._level-1)+16*(this._version-1),s=l.BLOCKS[n++],r=l.BLOCKS[n++],e=l.BLOCKS[n++],i=l.BLOCKS[n],n=e*(s+r)+r-3+(this._version<=9),!(o<=n)););this._dataBlock=e,this._eccBlock=i,this._neccBlock1=s,this._neccBlock2=r;var a=this.width=17+4*this._version;this.buffer=v._createArray(a*a),this._ecc=v._createArray(e+(e+i)*(s+r)+r),this._mask=v._createArray((a*(a+1)+1)/2),this._insertFinders(),this._insertAlignments(),this.buffer[8+a*(a-8)]=1,this._insertTimingGap(),this._reverseMask(),this._insertTimingRowAndColumn(),this._insertVersion(),this._syncMask(),this._convertBitStream(o),this._calculatePolynomial(),this._appendEccToData(),this._interleaveBlocks(),this._pack(),this._finish()},{_addAlignment:function(t,e){var i,n=this.buffer,s=this.width;for(n[t+s*e]=1,i=-2;i<2;i++)n[t+i+s*(e-2)]=1,n[t-2+s*(e+i+1)]=1,n[t+2+s*(e+i)]=1,n[t+i+1+s*(e+2)]=1;for(i=0;i<2;i++)this._setMask(t-1,e+i),this._setMask(t+1,e-i),this._setMask(t-i,e-1),this._setMask(t+i,e+1)},_appendData:function(t,e,i,n){var s,r,o,a=this._polynomial,h=this._stringBuffer;for(r=0;r<n;r++)h[i+r]=0;for(r=0;r<e;r++){if(255!==(s=_.LOG[h[t+r]^h[i]]))for(o=1;o<n;o++)h[i+o-1]=h[i+o]^_.EXPONENT[v._modN(s+a[n-o])];else for(o=i;o<i+n;o++)h[o]=h[o+1];h[i+n-1]=255===s?0:_.EXPONENT[v._modN(s+a[0])]}},_appendEccToData:function(){var t,e=0,i=this._dataBlock,n=this._calculateMaxLength(),s=this._eccBlock;for(t=0;t<this._neccBlock1;t++)this._appendData(e,i,n,s),e+=i,n+=s;for(t=0;t<this._neccBlock2;t++)this._appendData(e,i+1,n,s),e+=i+1,n+=s},_applyMask:function(t){var e,i,n,s,r=this.buffer,o=this.width;switch(t){case 0:for(s=0;s<o;s++)for(n=0;n<o;n++)n+s&1||this._isMasked(n,s)||(r[n+s*o]^=1);break;case 1:for(s=0;s<o;s++)for(n=0;n<o;n++)1&s||this._isMasked(n,s)||(r[n+s*o]^=1);break;case 2:for(s=0;s<o;s++)for(e=0,n=0;n<o;n++,e++)3===e&&(e=0),e||this._isMasked(n,s)||(r[n+s*o]^=1);break;case 3:for(i=0,s=0;s<o;s++,i++)for(3===i&&(i=0),e=i,n=0;n<o;n++,e++)3===e&&(e=0),e||this._isMasked(n,s)||(r[n+s*o]^=1);break;case 4:for(s=0;s<o;s++)for(e=0,i=s>>1&1,n=0;n<o;n++,e++)3===e&&(e=0,i=!i),i||this._isMasked(n,s)||(r[n+s*o]^=1);break;case 5:for(i=0,s=0;s<o;s++,i++)for(3===i&&(i=0),e=0,n=0;n<o;n++,e++)3===e&&(e=0),(n&s&1)+!(!e|!i)||this._isMasked(n,s)||(r[n+s*o]^=1);break;case 6:for(i=0,s=0;s<o;s++,i++)for(3===i&&(i=0),e=0,n=0;n<o;n++,e++)3===e&&(e=0),(n&s&1)+(e&&e===i)&1||this._isMasked(n,s)||(r[n+s*o]^=1);break;case 7:for(i=0,s=0;s<o;s++,i++)for(3===i&&(i=0),e=0,n=0;n<o;n++,e++)3===e&&(e=0),(e&&e===i)+(n+s&1)&1||this._isMasked(n,s)||(r[n+s*o]^=1)}},_calculateMaxLength:function(){return this._dataBlock*(this._neccBlock1+this._neccBlock2)+this._neccBlock2},_calculatePolynomial:function(){var t,e,i=this._eccBlock,n=this._polynomial;for(n[0]=1,t=0;t<i;t++){for(n[t+1]=1,e=t;e>0;e--)n[e]=n[e]?n[e-1]^_.EXPONENT[v._modN(_.LOG[n[e]]+t)]:n[e-1];n[0]=_.EXPONENT[v._modN(_.LOG[n[0]]+t)]}for(t=0;t<=i;t++)n[t]=_.LOG[n[t]]},_checkBadness:function(){var t,e,i,n,s,r=0,o=this._badness,a=this.buffer,h=this.width;for(s=0;s<h-1;s++)for(n=0;n<h-1;n++)(a[n+h*s]&&a[n+1+h*s]&&a[n+h*(s+1)]&&a[n+1+h*(s+1)]||!(a[n+h*s]||a[n+1+h*s]||a[n+h*(s+1)]||a[n+1+h*(s+1)]))&&(r+=v.N2);var f=0;for(s=0;s<h;s++){for(i=0,o[0]=0,t=0,n=0;n<h;n++)t===(e=a[n+h*s])?o[i]++:o[++i]=1,f+=(t=e)?1:-1;r+=this._getBadness(i)}f<0&&(f=-f);var c=0,u=f;for(u+=u<<2,u<<=1;u>h*h;)u-=h*h,c++;for(r+=c*v.N4,n=0;n<h;n++){for(i=0,o[0]=0,t=0,s=0;s<h;s++)t===(e=a[n+h*s])?o[i]++:o[++i]=1,t=e;r+=this._getBadness(i)}return r},_convertBitStream:function(t){var e,i,n=this._ecc,s=this._version;for(i=0;i<t;i++)n[i]=this._value.charCodeAt(i);var r=this._stringBuffer=n.slice(),o=this._calculateMaxLength();t>=o-2&&(t=o-2,s>9&&t--);var a=t;if(s>9){for(r[a+2]=0,r[a+3]=0;a--;)e=r[a],r[a+3]|=255&e<<4,r[a+2]=e>>4;r[2]|=255&t<<4,r[1]=t>>4,r[0]=64|t>>12}else{for(r[a+1]=0,r[a+2]=0;a--;)e=r[a],r[a+2]|=255&e<<4,r[a+1]=e>>4;r[1]|=255&t<<4,r[0]=64|t>>4}for(a=t+3-(s<10);a<o;)r[a++]=236,r[a++]=17},_getBadness:function(t){var e,i=0,n=this._badness;for(e=0;e<=t;e++)n[e]>=5&&(i+=v.N1+n[e]-5);for(e=3;e<t-1;e+=2)n[e-2]===n[e+2]&&n[e+2]===n[e-1]&&n[e-1]===n[e+1]&&3*n[e-1]===n[e]&&(0===n[e-3]||e+3>t||3*n[e-3]>=4*n[e]||3*n[e+3]>=4*n[e])&&(i+=v.N3);return i},_finish:function(){this._stringBuffer=this.buffer.slice();var t,e,i=0,n=3e4;for(e=0;e<8&&(this._applyMask(e),(t=this._checkBadness())<n&&(n=t,i=e),7!==i);e++)this.buffer=this._stringBuffer.slice();i!==e&&this._applyMask(i),n=l.FINAL_FORMAT[i+(this._level-1<<3)];var s=this.buffer,r=this.width;for(e=0;e<8;e++,n>>=1)1&n&&(s[r-1-e+8*r]=1,e<6?s[8+r*e]=1:s[8+r*(e+1)]=1);for(e=0;e<7;e++,n>>=1)1&n&&(s[8+r*(r-7+e)]=1,e?s[6-e+8*r]=1:s[7+8*r]=1)},_interleaveBlocks:function(){var t,e,i=this._dataBlock,n=this._ecc,s=this._eccBlock,r=0,o=this._calculateMaxLength(),a=this._neccBlock1,h=this._neccBlock2,f=this._stringBuffer;for(t=0;t<i;t++){for(e=0;e<a;e++)n[r++]=f[t+e*i];for(e=0;e<h;e++)n[r++]=f[a*i+t+e*(i+1)]}for(e=0;e<h;e++)n[r++]=f[a*i+t+e*(i+1)];for(t=0;t<s;t++)for(e=0;e<a+h;e++)n[r++]=f[o+t+e*s];this._stringBuffer=n},_insertAlignments:function(){var t,e,i,n=this._version,s=this.width;if(n>1)for(t=u.BLOCK[n],i=s-7;;){for(e=s-7;e>t-3&&(this._addAlignment(e,i),!(e<t));)e-=t;if(i<=t+9)break;i-=t,this._addAlignment(6,i),this._addAlignment(i,6)}},_insertFinders:function(){var t,e,i,n,s=this.buffer,r=this.width;for(t=0;t<3;t++){for(e=0,n=0,1===t&&(e=r-7),2===t&&(n=r-7),s[n+3+r*(e+3)]=1,i=0;i<6;i++)s[n+i+r*e]=1,s[n+r*(e+i+1)]=1,s[n+6+r*(e+i)]=1,s[n+i+1+r*(e+6)]=1;for(i=1;i<5;i++)this._setMask(n+i,e+1),this._setMask(n+1,e+i+1),this._setMask(n+5,e+i),this._setMask(n+i+1,e+5);for(i=2;i<4;i++)s[n+i+r*(e+2)]=1,s[n+2+r*(e+i+1)]=1,s[n+4+r*(e+i)]=1,s[n+i+1+r*(e+4)]=1}},_insertTimingGap:function(){var t,e,i=this.width;for(e=0;e<7;e++)this._setMask(7,e),this._setMask(i-8,e),this._setMask(7,e+i-7);for(t=0;t<8;t++)this._setMask(t,7),this._setMask(t+i-8,7),this._setMask(t,i-8)},_insertTimingRowAndColumn:function(){var t,e=this.buffer,i=this.width;for(t=0;t<i-14;t++)1&t?(this._setMask(8+t,6),this._setMask(6,8+t)):(e[8+t+6*i]=1,e[6+i*(8+t)]=1)},_insertVersion:function(){var t,e,i,n,s=this.buffer,r=this._version,o=this.width;if(r>6)for(t=d.BLOCK[r-7],e=17,i=0;i<6;i++)for(n=0;n<3;n++,e--)1&(e>11?r>>e-12:t>>e)?(s[5-i+o*(2-n+o-11)]=1,s[2-n+o-11+o*(5-i)]=1):(this._setMask(5-i,2-n+o-11),this._setMask(2-n+o-11,5-i))},_isMasked:function(t,e){var i=v._getMaskBit(t,e);return 1===this._mask[i]},_pack:function(){var t,e,i,n=1,s=1,r=this.width,o=r-1,a=r-1,h=(this._dataBlock+this._eccBlock)*(this._neccBlock1+this._neccBlock2)+this._neccBlock2;for(e=0;e<h;e++)for(t=this._stringBuffer[e],i=0;i<8;i++,t<<=1){128&t&&(this.buffer[o+r*a]=1);do{s?o--:(o++,n?0!==a?a--:(n=!n,6===(o-=2)&&(o--,a=9)):a!==r-1?a++:(n=!n,6===(o-=2)&&(o--,a-=8))),s=!s}while(this._isMasked(o,a))}},_reverseMask:function(){var t,e,i=this.width;for(t=0;t<9;t++)this._setMask(t,8);for(t=0;t<8;t++)this._setMask(t+i-8,8),this._setMask(8,t);for(e=0;e<7;e++)this._setMask(8,e+i-7)},_setMask:function(t,e){var i=v._getMaskBit(t,e);this._mask[i]=1},_syncMask:function(){var t,e,i=this.width;for(e=0;e<i;e++)for(t=0;t<=e;t++)this.buffer[t+i*e]&&this._setMask(t,e)}},{_createArray:function(t){var e,i=[];for(e=0;e<t;e++)i[e]=0;return i},_getMaskBit:function(t,e){var i;return t>e&&(i=t,t=e,e=i),i=e,i+=e*e,i>>=1,i+=t},_modN:function(t){for(;t>=255;)t=((t-=255)>>8)+(255&t);return t},N1:3,N2:3,N3:40,N4:10}),p=v,m=f.extend({draw:function(){this.element.src=this.qrious.toDataURL()},reset:function(){this.element.src=""},resize:function(){var t=this.element;t.width=t.height=this.qrious.size}}),g=h.extend(function(t,e,i,n){this.name=t,this.modifiable=Boolean(e),this.defaultValue=i,this._valueTransformer=n},{transform:function(t){var e=this._valueTransformer;return"function"==typeof e?e(t,this):t}}),k=h.extend(null,{abs:function(t){return null!=t?Math.abs(t):null},hasOwn:function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},noop:function(){},toUpperCase:function(t){return null!=t?t.toUpperCase():null}}),w=h.extend(function(t){this.options={},t.forEach(function(t){this.options[t.name]=t},this)},{exists:function(t){return null!=this.options[t]},get:function(t,e){return w._get(this.options[t],e)},getAll:function(t){var e,i=this.options,n={};for(e in i)k.hasOwn(i,e)&&(n[e]=w._get(i[e],t));return n},init:function(t,e,i){"function"!=typeof i&&(i=k.noop);var n,s;for(n in this.options)k.hasOwn(this.options,n)&&(s=this.options[n],w._set(s,s.defaultValue,e),w._createAccessor(s,e,i));this._setAll(t,e,!0)},set:function(t,e,i){return this._set(t,e,i)},setAll:function(t,e){return this._setAll(t,e)},_set:function(t,e,i,n){var s=this.options[t];if(!s)throw new Error("Invalid option: "+t);if(!s.modifiable&&!n)throw new Error("Option cannot be modified: "+t);return w._set(s,e,i)},_setAll:function(t,e,i){if(!t)return!1;var n,s=!1;for(n in t)k.hasOwn(t,n)&&this._set(n,t[n],e,i)&&(s=!0);return s}},{_createAccessor:function(t,e,i){var n={get:function(){return w._get(t,e)}};t.modifiable&&(n.set=function(n){w._set(t,n,e)&&i(n,t)}),Object.defineProperty(e,t.name,n)},_get:function(t,e){return e["_"+t.name]},_set:function(t,e,i){var n="_"+t.name,s=i[n],r=t.transform(null!=e?e:t.defaultValue);return i[n]=r,r!==s}}),M=w,b=h.extend(function(){this._services={}},{getService:function(t){var e=this._services[t];if(!e)throw new Error("Service is not being managed with name: "+t);return e},setService:function(t,e){if(this._services[t])throw new Error("Service is already managed with name: "+t);e&&(this._services[t]=e)}}),B=new M([new g("background",!0,"white"),new g("backgroundAlpha",!0,1,k.abs),new g("element"),new g("foreground",!0,"black"),new g("foregroundAlpha",!0,1,k.abs),new g("level",!0,"L",k.toUpperCase),new g("mime",!0,"image/png"),new g("padding",!0,null,k.abs),new g("size",!0,100,k.abs),new g("value",!0,"")]),y=new b,O=h.extend(function(t){B.init(t,this,this.update.bind(this));var e=B.get("element",this),i=y.getService("element"),n=e&&i.isCanvas(e)?e:i.createCanvas(),s=e&&i.isImage(e)?e:i.createImage();this._canvasRenderer=new c(this,n,!0),this._imageRenderer=new m(this,s,s===e),this.update()},{get:function(){return B.getAll(this)},set:function(t){B.setAll(t,this)&&this.update()},toDataURL:function(t){return this.canvas.toDataURL(t||this.mime)},update:function(){var t=new p({level:this.level,value:this.value});this._canvasRenderer.render(t),this._imageRenderer.render(t)}},{use:function(t){y.setService(t.getName(),t)}});Object.defineProperties(O.prototype,{canvas:{get:function(){return this._canvasRenderer.getElement()}},image:{get:function(){return this._imageRenderer.getElement()}}});var A=O,L=h.extend({getName:function(){}}).extend({createCanvas:function(){},createImage:function(){},getName:function(){return"element"},isCanvas:function(t){},isImage:function(t){}}).extend({createCanvas:function(){return document.createElement("canvas")},createImage:function(){return document.createElement("img")},isCanvas:function(t){return t instanceof HTMLCanvasElement},isImage:function(t){return t instanceof HTMLImageElement}});return A.use(new L),A});
+
+
+//SHA512 Function
+  function SHA512(str) {
+      function int64(msint_32, lsint_32) {
+      this.highOrder = msint_32;
+      this.lowOrder = lsint_32;
+      }
+     
+      var H = [new int64(0x6a09e667, 0xf3bcc908), new int64(0xbb67ae85, 0x84caa73b),
+      new int64(0x3c6ef372, 0xfe94f82b), new int64(0xa54ff53a, 0x5f1d36f1),
+      new int64(0x510e527f, 0xade682d1), new int64(0x9b05688c, 0x2b3e6c1f),
+      new int64(0x1f83d9ab, 0xfb41bd6b), new int64(0x5be0cd19, 0x137e2179)];
+     
+      var K = [new int64(0x428a2f98, 0xd728ae22), new int64(0x71374491, 0x23ef65cd),
+      new int64(0xb5c0fbcf, 0xec4d3b2f), new int64(0xe9b5dba5, 0x8189dbbc),
+      new int64(0x3956c25b, 0xf348b538), new int64(0x59f111f1, 0xb605d019),
+      new int64(0x923f82a4, 0xaf194f9b), new int64(0xab1c5ed5, 0xda6d8118),
+      new int64(0xd807aa98, 0xa3030242), new int64(0x12835b01, 0x45706fbe),
+      new int64(0x243185be, 0x4ee4b28c), new int64(0x550c7dc3, 0xd5ffb4e2),
+      new int64(0x72be5d74, 0xf27b896f), new int64(0x80deb1fe, 0x3b1696b1),
+      new int64(0x9bdc06a7, 0x25c71235), new int64(0xc19bf174, 0xcf692694),
+      new int64(0xe49b69c1, 0x9ef14ad2), new int64(0xefbe4786, 0x384f25e3),
+      new int64(0x0fc19dc6, 0x8b8cd5b5), new int64(0x240ca1cc, 0x77ac9c65),
+      new int64(0x2de92c6f, 0x592b0275), new int64(0x4a7484aa, 0x6ea6e483),
+      new int64(0x5cb0a9dc, 0xbd41fbd4), new int64(0x76f988da, 0x831153b5),
+      new int64(0x983e5152, 0xee66dfab), new int64(0xa831c66d, 0x2db43210),
+      new int64(0xb00327c8, 0x98fb213f), new int64(0xbf597fc7, 0xbeef0ee4),
+      new int64(0xc6e00bf3, 0x3da88fc2), new int64(0xd5a79147, 0x930aa725),
+      new int64(0x06ca6351, 0xe003826f), new int64(0x14292967, 0x0a0e6e70),
+      new int64(0x27b70a85, 0x46d22ffc), new int64(0x2e1b2138, 0x5c26c926),
+      new int64(0x4d2c6dfc, 0x5ac42aed), new int64(0x53380d13, 0x9d95b3df),
+      new int64(0x650a7354, 0x8baf63de), new int64(0x766a0abb, 0x3c77b2a8),
+      new int64(0x81c2c92e, 0x47edaee6), new int64(0x92722c85, 0x1482353b),
+      new int64(0xa2bfe8a1, 0x4cf10364), new int64(0xa81a664b, 0xbc423001),
+      new int64(0xc24b8b70, 0xd0f89791), new int64(0xc76c51a3, 0x0654be30),
+      new int64(0xd192e819, 0xd6ef5218), new int64(0xd6990624, 0x5565a910),
+      new int64(0xf40e3585, 0x5771202a), new int64(0x106aa070, 0x32bbd1b8),
+      new int64(0x19a4c116, 0xb8d2d0c8), new int64(0x1e376c08, 0x5141ab53),
+      new int64(0x2748774c, 0xdf8eeb99), new int64(0x34b0bcb5, 0xe19b48a8),
+      new int64(0x391c0cb3, 0xc5c95a63), new int64(0x4ed8aa4a, 0xe3418acb),
+      new int64(0x5b9cca4f, 0x7763e373), new int64(0x682e6ff3, 0xd6b2b8a3),
+      new int64(0x748f82ee, 0x5defb2fc), new int64(0x78a5636f, 0x43172f60),
+      new int64(0x84c87814, 0xa1f0ab72), new int64(0x8cc70208, 0x1a6439ec),
+      new int64(0x90befffa, 0x23631e28), new int64(0xa4506ceb, 0xde82bde9),
+      new int64(0xbef9a3f7, 0xb2c67915), new int64(0xc67178f2, 0xe372532b),
+      new int64(0xca273ece, 0xea26619c), new int64(0xd186b8c7, 0x21c0c207),
+      new int64(0xeada7dd6, 0xcde0eb1e), new int64(0xf57d4f7f, 0xee6ed178),
+      new int64(0x06f067aa, 0x72176fba), new int64(0x0a637dc5, 0xa2c898a6),
+      new int64(0x113f9804, 0xbef90dae), new int64(0x1b710b35, 0x131c471b),
+      new int64(0x28db77f5, 0x23047d84), new int64(0x32caab7b, 0x40c72493),
+      new int64(0x3c9ebe0a, 0x15c9bebc), new int64(0x431d67c4, 0x9c100d4c),
+      new int64(0x4cc5d4be, 0xcb3e42b6), new int64(0x597f299c, 0xfc657e2a),
+      new int64(0x5fcb6fab, 0x3ad6faec), new int64(0x6c44198c, 0x4a475817)];
+     
+      var W = new Array(64);
+      var a, b, c, d, e, f, g, h, i, j;
+      var T1, T2;
+      var charsize = 8;
+     
+      function utf8_encode(str) {
+      return unescape(encodeURIComponent(str));
+      }
+     
+      function str2binb(str) {
+      var bin = [];
+      var mask = (1 << charsize) - 1;
+      var len = str.length * charsize;
+     
+      for (var i = 0; i < len; i += charsize) {
+      bin[i >> 5] |= (str.charCodeAt(i / charsize) & mask) << (32 - charsize - (i % 32));
+      }
+     
+      return bin;
+      }
+     
+      function binb2hex(binarray) {
+      var hex_tab = '0123456789abcdef';
+      var str = '';
+      var length = binarray.length * 4;
+      var srcByte;
+     
+      for (var i = 0; i < length; i += 1) {
+      srcByte = binarray[i >> 2] >> ((3 - (i % 4)) * 8);
+      str += hex_tab.charAt((srcByte >> 4) & 0xF) + hex_tab.charAt(srcByte & 0xF);
+      }
+     
+      return str;
+      }
+     
+      function safe_add_2(x, y) {
+      var lsw, msw, lowOrder, highOrder;
+     
+      lsw = (x.lowOrder & 0xFFFF) + (y.lowOrder & 0xFFFF);
+      msw = (x.lowOrder >>> 16) + (y.lowOrder >>> 16) + (lsw >>> 16);
+      lowOrder = ((msw & 0xFFFF) << 16) | (lsw & 0xFFFF);
+     
+      lsw = (x.highOrder & 0xFFFF) + (y.highOrder & 0xFFFF) + (msw >>> 16);
+      msw = (x.highOrder >>> 16) + (y.highOrder >>> 16) + (lsw >>> 16);
+      highOrder = ((msw & 0xFFFF) << 16) | (lsw & 0xFFFF);
+     
+      return new int64(highOrder, lowOrder);
+      }
+     
+      function safe_add_4(a, b, c, d) {
+      var lsw, msw, lowOrder, highOrder;
+     
+      lsw = (a.lowOrder & 0xFFFF) + (b.lowOrder & 0xFFFF) + (c.lowOrder & 0xFFFF) + (d.lowOrder & 0xFFFF);
+      msw = (a.lowOrder >>> 16) + (b.lowOrder >>> 16) + (c.lowOrder >>> 16) + (d.lowOrder >>> 16) + (lsw >>> 16);
+      lowOrder = ((msw & 0xFFFF) << 16) | (lsw & 0xFFFF);
+     
+      lsw = (a.highOrder & 0xFFFF) + (b.highOrder & 0xFFFF) + (c.highOrder & 0xFFFF) + (d.highOrder & 0xFFFF) + (msw >>> 16);
+      msw = (a.highOrder >>> 16) + (b.highOrder >>> 16) + (c.highOrder >>> 16) + (d.highOrder >>> 16) + (lsw >>> 16);
+      highOrder = ((msw & 0xFFFF) << 16) | (lsw & 0xFFFF);
+     
+      return new int64(highOrder, lowOrder);
+      }
+     
+      function safe_add_5(a, b, c, d, e) {
+      var lsw, msw, lowOrder, highOrder;
+     
+      lsw = (a.lowOrder & 0xFFFF) + (b.lowOrder & 0xFFFF) + (c.lowOrder & 0xFFFF) + (d.lowOrder & 0xFFFF) + (e.lowOrder & 0xFFFF);
+      msw = (a.lowOrder >>> 16) + (b.lowOrder >>> 16) + (c.lowOrder >>> 16) + (d.lowOrder >>> 16) + (e.lowOrder >>> 16) + (lsw >>> 16);
+      lowOrder = ((msw & 0xFFFF) << 16) | (lsw & 0xFFFF);
+     
+      lsw = (a.highOrder & 0xFFFF) + (b.highOrder & 0xFFFF) + (c.highOrder & 0xFFFF) + (d.highOrder & 0xFFFF) + (e.highOrder & 0xFFFF) + (msw >>> 16);
+      msw = (a.highOrder >>> 16) + (b.highOrder >>> 16) + (c.highOrder >>> 16) + (d.highOrder >>> 16) + (e.highOrder >>> 16) + (lsw >>> 16);
+      highOrder = ((msw & 0xFFFF) << 16) | (lsw & 0xFFFF);
+     
+      return new int64(highOrder, lowOrder);
+      }
+     
+      function maj(x, y, z) {
+      return new int64(
+      (x.highOrder & y.highOrder) ^ (x.highOrder & z.highOrder) ^ (y.highOrder & z.highOrder),
+      (x.lowOrder & y.lowOrder) ^ (x.lowOrder & z.lowOrder) ^ (y.lowOrder & z.lowOrder)
+      );
+      }
+     
+      function ch(x, y, z) {
+      return new int64(
+      (x.highOrder & y.highOrder) ^ (~x.highOrder & z.highOrder),
+      (x.lowOrder & y.lowOrder) ^ (~x.lowOrder & z.lowOrder)
+      );
+      }
+     
+      function rotr(x, n) {
+      if (n <= 32) {
+      return new int64(
+      (x.highOrder >>> n) | (x.lowOrder << (32 - n)),
+      (x.lowOrder >>> n) | (x.highOrder << (32 - n))
+      );
+      } else {
+      return new int64(
+      (x.lowOrder >>> n) | (x.highOrder << (32 - n)),
+      (x.highOrder >>> n) | (x.lowOrder << (32 - n))
+      );
+      }
+      }
+     
+      function sigma0(x) {
+      var rotr28 = rotr(x, 28);
+      var rotr34 = rotr(x, 34);
+      var rotr39 = rotr(x, 39);
+     
+      return new int64(
+      rotr28.highOrder ^ rotr34.highOrder ^ rotr39.highOrder,
+      rotr28.lowOrder ^ rotr34.lowOrder ^ rotr39.lowOrder
+      );
+      }
+     
+      function sigma1(x) {
+      var rotr14 = rotr(x, 14);
+      var rotr18 = rotr(x, 18);
+      var rotr41 = rotr(x, 41);
+     
+      return new int64(
+      rotr14.highOrder ^ rotr18.highOrder ^ rotr41.highOrder,
+      rotr14.lowOrder ^ rotr18.lowOrder ^ rotr41.lowOrder
+      );
+      }
+     
+      function gamma0(x) {
+      var rotr1 = rotr(x, 1), rotr8 = rotr(x, 8), shr7 = shr(x, 7);
+     
+      return new int64(
+      rotr1.highOrder ^ rotr8.highOrder ^ shr7.highOrder,
+      rotr1.lowOrder ^ rotr8.lowOrder ^ shr7.lowOrder
+      );
+      }
+     
+      function gamma1(x) {
+      var rotr19 = rotr(x, 19);
+      var rotr61 = rotr(x, 61);
+      var shr6 = shr(x, 6);
+     
+      return new int64(
+      rotr19.highOrder ^ rotr61.highOrder ^ shr6.highOrder,
+      rotr19.lowOrder ^ rotr61.lowOrder ^ shr6.lowOrder
+      );
+      }
+     
+      function shr(x, n) {
+      if (n <= 32) {
+      return new int64(
+      x.highOrder >>> n,
+      x.lowOrder >>> n | (x.highOrder << (32 - n))
+      );
+      } else {
+      return new int64(
+      0,
+      x.highOrder << (32 - n)
+      );
+      }
+      }
+     
+      str = utf8_encode(str);
+      strlen = str.length*charsize;
+      str = str2binb(str);
+     
+      str[strlen >> 5] |= 0x80 << (24 - strlen % 32);
+      str[(((strlen + 128) >> 10) << 5) + 31] = strlen;
+     
+      for (var i = 0; i < str.length; i += 32) {
+      a = H[0];
+      b = H[1];
+      c = H[2];
+      d = H[3];
+      e = H[4];
+      f = H[5];
+      g = H[6];
+      h = H[7];
+     
+      for (var j = 0; j < 80; j++) {
+      if (j < 16) {
+      W[j] = new int64(str[j*2 + i], str[j*2 + i + 1]);
+      } else {
+      W[j] = safe_add_4(gamma1(W[j - 2]), W[j - 7], gamma0(W[j - 15]), W[j - 16]);
+      }
+     
+      T1 = safe_add_5(h, sigma1(e), ch(e, f, g), K[j], W[j]);
+      T2 = safe_add_2(sigma0(a), maj(a, b, c));
+      h = g;
+      g = f;
+      f = e;
+      e = safe_add_2(d, T1);
+      d = c;
+      c = b;
+      b = a;
+      a = safe_add_2(T1, T2);
+      }
+     
+      H[0] = safe_add_2(a, H[0]);
+      H[1] = safe_add_2(b, H[1]);
+      H[2] = safe_add_2(c, H[2]);
+      H[3] = safe_add_2(d, H[3]);
+      H[4] = safe_add_2(e, H[4]);
+      H[5] = safe_add_2(f, H[5]);
+      H[6] = safe_add_2(g, H[6]);
+      H[7] = safe_add_2(h, H[7]);
+      }
+     
+      var binarray = [];
+      for (var i = 0; i < H.length; i++) {
+      binarray.push(H[i].highOrder);
+      binarray.push(H[i].lowOrder);
+      }
+      return binb2hex(binarray);
+     }
+        </script>
